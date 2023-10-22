@@ -21,24 +21,12 @@
           </tr>
         </thead>
         <tbody id="query-review-table-body">
-          <!-- Content will be added here dynamically using JavaScript -->
+   
         </tbody>
       </table>
 
     <script lang="js">
-    //     var classes=["Tech -> 9am - 11am", "Health Talk -> 11am - 12noon", "Comms -> 1pm - 3pm", "POP Presentation -> 3:30pm - 5pm"]
-
-    //     function onLoadClassList() {
-            
-    //         var classListUL = document.getElementById("classlist");
-    //         for(var i = 0; i < classes.length; i++){
-    //             var listItem = document.createElement("li");
-    //                 listItem.textContent = classes[i];
-    //                 classListUL.appendChild(listItem);
-                
-    //         }
-    //     }
-    // onLoadClassList()
+   
 
     const queries = [
 {id: 1, student: "Genesis", query: "Permission to absent from tech class", status: "APPROVED"},
@@ -48,10 +36,10 @@
 {id: 5, student: "Sila", query: "Permission to participate in Absa Hackathon", status: "PENDING"},
 ]
 
- // Get a reference to the table body
+
  const tableBody = document.getElementById("query-review-table-body");
 
-// Loop through the queries and add rows to the table
+
 queries.forEach((query) => {
   const row = tableBody.insertRow();
   const cell1 = row.insertCell(0);
