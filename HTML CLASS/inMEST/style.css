@@ -1,0 +1,90 @@
+.relative-pos{
+    position: relative;
+    background-color: rgb(248, 78, 78);height: 150px;width: 150px;
+    height: 150vh;
+    width: 300px;
+    height: 300px;
+    left: 30px;
+    right: 30px;
+}
+.absolute-pos{
+    position: absolute;
+    background-color: aqua;
+}
+.fixed-pos{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(241, 150, 31);
+    color: rgb(233, 244, 244);
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.sticky-pos{
+    position: sticky;
+    background-color: #6e6e6e;
+    top: 3px;
+    list-style-type: none;
+    padding-left: none;
+    display: flex;
+    color: bisque;
+    justify-content: flex-end;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index:10;
+}
+body{
+    margin: 0px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper.side-nav{
+    width: 250px;
+    height: 100px;
+}
+.side-nav .menu{
+    list-style-type: none;
+    color: darkgreen;
+    padding: 50px;
+    margin: 25px;
+    background-color: #fff;
+}
+
+.menu li{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    line-height: 50px;
+    padding: 10px 20px;
+    border-radius: 35px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    }
+
+.menu li img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    color: crimson;
+}
+.wrapper .side-nav .menu .menu-active {
+background-color: aqua;
+color: #fff;
+}
+.wrapper .side-nav .menu li:hover{
+background-color: aquamarine;
+color: #fff;
+}
